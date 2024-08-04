@@ -10,13 +10,13 @@ class Solution {
         var countSeniors = 0
         for (info in details) {
             if (getAge(info[INDICES_AGE[0]], info[INDICES_AGE[1]]) > MAX_NON_SENIOR_AGE) {
-                ++countSeniors;
+                ++countSeniors
             }
         }
-        return countSeniors;
+        return countSeniors
     }
 
     private fun getAge(firstDigit: Char, secondDigit: Char): Int {
-        return 10 * (firstDigit - '0') + (secondDigit - '0');
+        return 10 * (firstDigit - '0') + (secondDigit - '0')
     }
 }
